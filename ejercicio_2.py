@@ -128,10 +128,11 @@ class Ventana(QWidget):
         if not nombre or not apellido or not dni:
             QMessageBox.warning(self, "Campos incompletos", "Por favor, completá todos los campos.")
         else:
-            QMessageBox.information(self, "Registro exitoso", "¡Te has registrado correctamente!")
+            QMessageBox.information(self, "Compra Exitosa", "Se ha realizado la compra")
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ventana = Ventana()
     ventana.show()
+
     sys.exit(app.exec_())
