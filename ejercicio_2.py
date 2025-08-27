@@ -14,7 +14,6 @@ class Ventana(QWidget):
 
         label_1=QLabel("Formulario de Compra")
         label_1.setAlignment(Qt.AlignHCenter)
-        label_1.setFont(QFont("Comic Sans", 30, QFont.Bold))
         label_1.setStyleSheet("color: #000000")
         label_1.setFont(QFont("Times New Roman", 15, QFont.Bold))
         label_1.setWordWrap(True)
@@ -134,3 +133,4 @@ if __name__ == '__main__':
     ventana.show()
 
     sys.exit(app.exec_())
+
