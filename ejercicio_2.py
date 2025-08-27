@@ -92,14 +92,12 @@ class Ventana(QWidget):
         boton_turista.setStyleSheet("color: #000000")
         boton_turista.setFont(QFont("Times New Roman", 10, QFont.Bold))
         boton_turista.setChecked(True)
-        boton_turista.genero = "Masculino"
         layout.addWidget(boton_turista, 7, 1)
 
         boton_ejecutiva = QRadioButton("Ejecutiva")
         boton_ejecutiva.setStyleSheet("color: #000000")
         boton_ejecutiva.setFont(QFont("Times New Roman", 10, QFont.Bold))
         boton_ejecutiva.setChecked(False)
-        boton_ejecutiva.genero = "Fémenino"
         layout.addWidget(boton_ejecutiva, 7, 2)
 
         grupo_clase=QButtonGroup()
@@ -134,4 +132,5 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     ventana = Ventana()
     ventana.show()
+
     sys.exit(app.exec_())
