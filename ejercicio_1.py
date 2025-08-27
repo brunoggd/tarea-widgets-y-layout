@@ -15,7 +15,6 @@ class Ventana(QWidget):
         label_1=QLabel("Formulario de Registro")
         layout.addWidget(label_1,0,0,1,3)
         label_1.setAlignment(Qt.AlignHCenter)
-        label_1.setFont(QFont("Comic Sans", 30, QFont.Bold))
         label_1.setStyleSheet("color: #4943F7")
         label_1.setFont(QFont("Times New Roman", 15, QFont.Bold))
         label_1.setWordWrap(True)
@@ -109,4 +108,5 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     ventana = Ventana()
     ventana.show()
+
     sys.exit(app.exec_())
